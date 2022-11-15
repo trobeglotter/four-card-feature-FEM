@@ -1,0 +1,124 @@
+.container {
+  padding: 0 40px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 501px) {
+  .container {
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 501px) {
+  .container .cards {
+    display: grid;
+    grid-template-areas: "supervisor team-builder calculator" "supervisor karma calculator";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-content: center;
+  }
+}
+
+.calculator, .karma, .team-builder, .supervisor {
+  color: hsl(234deg, 12%, 34%);
+  background-color: hsl(0deg, 100%, 100%);
+  border-radius: 2%;
+  height: 225px;
+  padding: 2rem;
+  margin: 1.8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(76, 78, 97, 0.349) 0px 5px 15px;
+}
+.calculator:hover, .karma:hover, .team-builder:hover, .supervisor:hover {
+  transform: scale(1.05);
+}
+.calculator h4, .karma h4, .team-builder h4, .supervisor h4 {
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  padding-bottom: 0.5rem;
+}
+.calculator p, .karma p, .team-builder p, .supervisor p {
+  font-family: "Rubik", sans-serif;
+  color: hsl(229deg, 6%, 66%);
+  line-height: 1.5;
+}
+.calculator img, .karma img, .team-builder img, .supervisor img {
+  height: 55px;
+  width: 55px;
+  align-self: flex-end;
+}
+
+.supervisor {
+  border-top: 5px solid hsl(180deg, 62%, 55%);
+  grid-area: supervisor;
+}
+@media screen and (min-width: 501px) {
+  .supervisor {
+    align-self: center;
+  }
+}
+
+.team-builder {
+  border-top: 5px solid hsl(0deg, 78%, 62%);
+  grid-area: team-builder;
+}
+
+.karma {
+  border-top: 5px solid hsl(34deg, 97%, 64%);
+  grid-area: karma;
+}
+
+.calculator {
+  border-top: 5px solid hsl(212deg, 86%, 64%);
+  grid-area: calculator;
+}
+@media screen and (min-width: 501px) {
+  .calculator {
+    align-self: center;
+  }
+}
+
+header {
+  margin: 10% 0 0%;
+}
+header h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: hsl(229deg, 6%, 66%);
+  padding-bottom: 0.5rem;
+}
+header h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+  color: hsl(234deg, 12%, 34%);
+}
+header p {
+  text-align: center;
+  color: hsl(229deg, 6%, 66%);
+  padding-bottom: 1.5rem;
+}
+@media screen and (min-width: 501px) {
+  header p {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 98%);
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=styles.css.map */

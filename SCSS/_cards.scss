@@ -1,0 +1,59 @@
+
+%card {
+    color: $very-dark-blue;
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 2%;
+    height: 225px;
+    padding: 2rem;
+    margin: 1.8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(76, 78, 97, 0.349) 0px 5px 15px;
+    &:hover {
+        transform: scale(1.05);
+    }
+    h4 {
+        font-size: 1.2rem;
+        font-family: $rubik;
+        padding-bottom: .5rem;
+    
+    }
+    p {
+        font-family: $rubik;
+        color: $grayish-blue;
+        line-height: 1.5;
+    }
+    img {
+        height: 55px;
+        width: 55px;
+        align-self: flex-end;
+        }
+    
+}
+.supervisor {
+    @extend %card;
+    border-top: 5px solid $cyan;
+    grid-area: supervisor;
+        @media screen and (min-width: $desktop) {
+        align-self: center;
+        }
+    }
+.team-builder {
+    @extend %card;
+    border-top: 5px solid $red;
+    grid-area: team-builder;
+}
+.karma {
+    @extend %card;
+    border-top: 5px solid $orange;
+    grid-area: karma;
+}
+.calculator {
+    @extend %card;
+    border-top: 5px solid $blue;
+    grid-area: calculator;
+    @media screen and (min-width: $desktop) {
+        align-self: center;
+    }
+}

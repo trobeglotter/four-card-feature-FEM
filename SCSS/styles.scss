@@ -1,0 +1,18 @@
+@import 'config';
+@import 'utilities';
+@import 'cards';
+@import 'header';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $very-light-grey;
+    font-size: 15px;
+    font-family: $alata;
+    min-height: 100vh
+}
+
