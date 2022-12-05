@@ -14,3 +14,11 @@ $blue: hsl(212, 86%, 64%);
 
 $desktop: 501px;
 $shadow: rgba(0, 0, 0, 0.418) 0px 5px 15px;
+   
+@function make-new-bg($color) {
+    @if(lightness($color) > 70) {
+        @return #333;
+    } @else {
+        @return hsl(0, 100%, 100%);
+    }
+}

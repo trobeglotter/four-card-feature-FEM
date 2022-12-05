@@ -18,6 +18,12 @@
     align-content: center;
   }
 }
+@media screen and (min-width: 501px) {
+  .container header p {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
 
 .calculator, .karma, .team-builder, .supervisor {
   color: hsl(234deg, 12%, 34%);
@@ -33,6 +39,7 @@
 }
 .calculator:hover, .karma:hover, .team-builder:hover, .supervisor:hover {
   transform: scale(1.05);
+  background-color: #333;
 }
 .calculator h4, .karma h4, .team-builder h4, .supervisor h4 {
   font-size: 1.2rem;
@@ -100,12 +107,6 @@ header p {
   text-align: center;
   color: hsl(229deg, 6%, 66%);
   padding-bottom: 1.5rem;
-}
-@media screen and (min-width: 501px) {
-  header p {
-    width: 40%;
-    margin: 0 auto;
-  }
 }
 
 * {

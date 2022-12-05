@@ -12,7 +12,8 @@
     box-shadow: rgba(76, 78, 97, 0.349) 0px 5px 15px;
     &:hover {
         transform: scale(1.05);
-    }
+        background-color: make-new-bg(hsl(0, 100%, 100%)) ;
+       }
     h4 {
         font-size: 1.2rem;
         font-family: $rubik;
